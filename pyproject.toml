@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "prsktools"
+version = "0.1.0"
+description = ""
+authors = ["honoka-scent <63340714+maidfrillkinpatsu@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+pytesseract = "^0.3.13"
+pillow = "^10.4.0"
+jinja2 = "^3.1.4"
+pandas = "^2.2.3"
+toml = "^0.10.2"
+inquirer = "^3.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+jupyterlab = "^4.2.5"
+tqdm = "^4.66.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

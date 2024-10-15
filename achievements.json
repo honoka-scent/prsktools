@@ -1,0 +1,406 @@
+{
+    "results": {
+        "メルト": {
+            "name": "メルト",
+            "Expert": {
+                "status": "Clear",
+                "date": "2024-10-15T23:39:44.573624"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T23:39:44.573624"
+        },
+        "熱風": {
+            "name": "熱風",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:21:36.087350"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:21:36.087350"
+        },
+        "アイディスマイル": {
+            "name": "アイディスマイル",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:28:06.003655"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:28:06.003655"
+        },
+        "Where shall we go?": {
+            "name": "Where shall we go?",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:20:02.969047"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:20:02.969047"
+        },
+        "レイヤーノート": {
+            "name": "レイヤーノート",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:20:15.865408"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:20:15.865408"
+        },
+        "Tell Your World": {
+            "name": "Tell Your World",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:20:25.277089"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:20:25.277089"
+        },
+        "だんだん早くなる": {
+            "name": "だんだん早くなる",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:20:39.062481"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:20:39.062481"
+        },
+        "夜もすがら君想ふ": {
+            "name": "夜もすがら君想ふ",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:21:45.140769"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:21:45.140769"
+        },
+        "オーダーメイド": {
+            "name": "オーダーメイド",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:22:02.031203"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:22:02.031203"
+        },
+        "恋愛裁判": {
+            "name": "恋愛裁判",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:25:18.018299"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:25:18.018299"
+        },
+        "flos": {
+            "name": "flos",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:25:27.909224"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:25:27.909224"
+        },
+        "MOTTO!!!": {
+            "name": "MOTTO!!!",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:25:36.341028"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:25:36.341028"
+        },
+        "少女レイ": {
+            "name": "少女レイ",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:25:44.635181"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:25:44.635181"
+        },
+        "街": {
+            "name": "街",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:26:11.820407"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:26:11.820407"
+        },
+        "コールボーイ": {
+            "name": "コールボーイ",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:26:24.473641"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:26:24.473641"
+        },
+        "君の夜をくれ": {
+            "name": "君の夜をくれ",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:26:55.163458"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:26:55.163458"
+        },
+        "独りんぼエンヴィー": {
+            "name": "独りんぼエンヴィー",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:27:06.919483"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:27:06.919483"
+        },
+        "それがあなたの幸せとしても": {
+            "name": "それがあなたの幸せとしても",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:27:15.940813"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:27:15.940813"
+        },
+        "心做し": {
+            "name": "心做し",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:27:26.049965"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:27:26.049965"
+        },
+        "妄想感傷代償連盟": {
+            "name": "妄想感傷代償連盟",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:27:38.852321"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:27:38.852321"
+        },
+        "Shadow Shadow": {
+            "name": "Shadow Shadow",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T21:27:46.195580"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T21:27:46.195580"
+        },
+        "トワイライトライト": {
+            "name": "トワイライトライト",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T22:02:38.366357"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T22:02:38.366357"
+        },
+        "いちにのさんで": {
+            "name": "いちにのさんで",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T22:19:26.997498"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T22:19:26.997498"
+        },
+        "25時の情熱": {
+            "name": "25時の情熱",
+            "Expert": {
+                "status": "FC",
+                "date": "2024-10-15T22:38:22.623478"
+            },
+            "Master": {
+                "status": null,
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "date": null
+            },
+            "date": "2024-10-15T22:38:22.623478"
+        }
+    },
+    "total": {
+        "Expert": {
+            "Clear": 24,
+            "FC": 23,
+            "AP": 0
+        },
+        "Master": {
+            "Clear": 0,
+            "FC": 0,
+            "AP": 0
+        },
+        "Append": {
+            "Clear": 0,
+            "FC": 0,
+            "AP": 0
+        }
+    },
+    "date": "2024-10-15T23:39:44.573624"
+}
