@@ -8,10 +8,28 @@ from data_loader import load_songs_from_csv
 from difflib import SequenceMatcher
 from manual_input import manual_input
 
+from screenshot import screenshot_from_window
 
-def ocr_input(image_path):
+
+def ocr_input_from_window(window_title, crop_box=None, show_image=False):
+    screendhot = screenshot_from_window(window_title)
+    ocr_input(screendhot, crop_box, show_image)
+
+
+def ocr_input_from_file(image_path, crop_box=None, show_image=False):
+    image = Image.open(image_path, crop_box, show_image)
+    ocr_input(image)
+
+
+# cropbox: (left, upper, right, lower)
+def ocr_input(image, crop_box=None, show_image=False):
     # 画像からテキストを抽出
-    text = pytesseract.image_to_string(Image.open(image_path), lang="日本語")
+    if crop_box:
+        image = image.crop(crop_box)
+    if show_image:
+        image.show()
+
+    text = pytesseract.image_to_string(image, lang="日本語")
     print("認識されたテキスト:", text)
 
     # 楽曲データをロードして確認
@@ -30,9 +48,13 @@ def ocr_input(image_path):
     if not matched_songs:
         print("該当する楽曲が見つかりませんでした。")
 
-    manual_input(song_names=[song[0]["name"] for song in matched_songs])
+    manual_input(
+        song_names=[song[0]["name"] for song in matched_songs], songs=songs_list
+    )
 
 
 def main():
-    image_path = "sample.png"
-    ocr_input(image_path)
+    image_path = "./image/sample.png"
+    window_name = ""
+    ocr_input_from_file(image_path)
+    ocr_input_from_window(window_name, (0, 0, 200, 300))

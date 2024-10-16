@@ -4,6 +4,7 @@ import json
 import os
 from datetime import datetime
 
+
 ACHIEVEMENTS_JSON = "achievements.json"
 
 
@@ -19,8 +20,7 @@ def save_achievements(achievements):
         json.dump(achievements, file, ensure_ascii=False, indent=4)
 
 
-def update_achievement(song_name, difficulty, status, song_count, songs):
-    achievements = load_achievements()
+def get_song_level(song_name, difficulty, songs):
     song_info = [song for song in songs if song["楽曲名"] == song_name][0]
     diff_lv_dict = {
         "Expert": "X",
@@ -28,6 +28,22 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
         "Append": "A",
     }
     lv = song_info[diff_lv_dict[difficulty]]
+    return lv
+
+
+def set_achievement_song_level(songs):
+    achievements = load_achievements()
+    for key, value in achievements["results"].items():
+        for difficulty in ["Expert", "Master", "Append"]:
+            lv = get_song_level(value["name"], difficulty, songs)
+            achievements["results"][key][difficulty]["lv"] = lv
+    save_achievements(achievements)
+    print("楽曲の難易度を更新しました。")
+
+
+def update_achievement(song_name, difficulty, status, song_count, songs):
+    achievements = load_achievements()
+    lv = get_song_level(song_name, difficulty, songs)
 
     key = f"{song_name}"
 
@@ -38,6 +54,7 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
     if key not in achievements["results"]:
         achieve_dict = {
             "status": None,
+            "level": lv,
             "date": None,
         }
         achievements["results"][key] = {
@@ -51,11 +68,12 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
     # 難易度に応じてステータスを更新
     date_now = datetime.now().isoformat()
     achievements["results"][key][difficulty]["status"] = status
+    achievements["results"][key][difficulty]["level"] = status
     achievements["results"][key][difficulty]["date"] = date_now
     achievements["results"][key]["date"] = date_now  # 更新日時を変更
 
     # 集計データの更新
-    achievements["total"] = calculate_total_clears(achievements["results"])
+    achievements["total"] = calculate_total_clears(achievements["results"], songs)
     achievements["date"] = date_now
 
     save_achievements(achievements)
@@ -63,7 +81,7 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
     print(f"{song_name}（{difficulty}）の達成度を{status}に更新しました。")
 
 
-def calculate_total_clears(results):
+def calculate_total_clears(results, songs):
     # 各難易度のクリア数を集計
     t_dict = {"Clear": 0, "FC": 0, "AP": 0}
     total_clears = {
@@ -75,6 +93,7 @@ def calculate_total_clears(results):
 
     for key, value in results.items():
         for difficulty in keys:
+            lv = get_song_level(value["name"], difficulty, songs)
             diff_dict = value.get(difficulty, None)
             if diff_dict is None:
                 continue
@@ -120,3 +139,10 @@ def update_achievement_log(song_name, difficulty, lv, status, song_count):
         file.write(log_text)
 
     print("ログファイルを更新しました。")
+
+
+if __name__ == "__main__":
+    from data_loader import load_songs_from_csv
+
+    songs = load_songs_from_csv()
+    set_achievement_song_level(songs)

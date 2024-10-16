@@ -4,15 +4,18 @@
             "name": "メルト",
             "Expert": {
                 "status": "Clear",
-                "date": "2024-10-15T23:39:44.573624"
+                "date": "2024-10-15T23:39:44.573624",
+                "lv": "25"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "29"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T23:39:44.573624"
         },
@@ -20,15 +23,18 @@
             "name": "熱風",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:21:36.087350"
+                "date": "2024-10-15T21:21:36.087350",
+                "lv": "23"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "29"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "31"
             },
             "date": "2024-10-15T21:21:36.087350"
         },
@@ -36,15 +42,18 @@
             "name": "アイディスマイル",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:28:06.003655"
+                "date": "2024-10-15T21:28:06.003655",
+                "lv": "25"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "28"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "date": "2024-10-15T21:28:06.003655"
         },
@@ -52,15 +61,18 @@
             "name": "Where shall we go?",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:20:02.969047"
+                "date": "2024-10-15T21:20:02.969047",
+                "lv": "21"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:20:02.969047"
         },
@@ -68,15 +80,18 @@
             "name": "レイヤーノート",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:20:15.865408"
+                "date": "2024-10-15T21:20:15.865408",
+                "lv": "21"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:20:15.865408"
         },
@@ -84,15 +99,18 @@
             "name": "Tell Your World",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:20:25.277089"
+                "date": "2024-10-15T21:20:25.277089",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "25"
             },
             "date": "2024-10-15T21:20:25.277089"
         },
@@ -100,15 +118,18 @@
             "name": "だんだん早くなる",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:20:39.062481"
+                "date": "2024-10-15T21:20:39.062481",
+                "lv": "24"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "28"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:20:39.062481"
         },
@@ -116,15 +137,18 @@
             "name": "夜もすがら君想ふ",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:21:45.140769"
+                "date": "2024-10-15T21:21:45.140769",
+                "lv": "24"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "28"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:21:45.140769"
         },
@@ -132,15 +156,18 @@
             "name": "オーダーメイド",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:22:02.031203"
+                "date": "2024-10-15T21:22:02.031203",
+                "lv": "21"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:22:02.031203"
         },
@@ -148,15 +175,18 @@
             "name": "恋愛裁判",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:25:18.018299"
+                "date": "2024-10-15T21:25:18.018299",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "28"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:25:18.018299"
         },
@@ -164,15 +194,18 @@
             "name": "flos",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:25:27.909224"
+                "date": "2024-10-15T21:25:27.909224",
+                "lv": "23"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:25:27.909224"
         },
@@ -180,15 +213,18 @@
             "name": "MOTTO!!!",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:25:36.341028"
+                "date": "2024-10-15T21:25:36.341028",
+                "lv": "23"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:25:36.341028"
         },
@@ -196,15 +232,18 @@
             "name": "少女レイ",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:25:44.635181"
+                "date": "2024-10-15T21:25:44.635181",
+                "lv": "24"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "date": "2024-10-15T21:25:44.635181"
         },
@@ -212,15 +251,18 @@
             "name": "街",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:26:11.820407"
+                "date": "2024-10-15T21:26:11.820407",
+                "lv": "23"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:26:11.820407"
         },
@@ -228,15 +270,18 @@
             "name": "コールボーイ",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:26:24.473641"
+                "date": "2024-10-15T21:26:24.473641",
+                "lv": "25"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "29"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:26:24.473641"
         },
@@ -244,15 +289,18 @@
             "name": "君の夜をくれ",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:26:55.163458"
+                "date": "2024-10-15T21:26:55.163458",
+                "lv": "21"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:26:55.163458"
         },
@@ -260,15 +308,18 @@
             "name": "独りんぼエンヴィー",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:27:06.919483"
+                "date": "2024-10-15T21:27:06.919483",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:27:06.919483"
         },
@@ -276,15 +327,18 @@
             "name": "それがあなたの幸せとしても",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:27:15.940813"
+                "date": "2024-10-15T21:27:15.940813",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:27:15.940813"
         },
@@ -292,15 +346,18 @@
             "name": "心做し",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:27:26.049965"
+                "date": "2024-10-15T21:27:26.049965",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:27:26.049965"
         },
@@ -308,15 +365,18 @@
             "name": "妄想感傷代償連盟",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:27:38.852321"
+                "date": "2024-10-15T21:27:38.852321",
+                "lv": "23"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:27:38.852321"
         },
@@ -324,15 +384,18 @@
             "name": "Shadow Shadow",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T21:27:46.195580"
+                "date": "2024-10-15T21:27:46.195580",
+                "lv": "23"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "27"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T21:27:46.195580"
         },
@@ -340,15 +403,18 @@
             "name": "トワイライトライト",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T22:02:38.366357"
+                "date": "2024-10-15T22:02:38.366357",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T22:02:38.366357"
         },
@@ -356,15 +422,18 @@
             "name": "いちにのさんで",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T22:19:26.997498"
+                "date": "2024-10-15T22:19:26.997498",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "26"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T22:19:26.997498"
         },
@@ -372,15 +441,18 @@
             "name": "25時の情熱",
             "Expert": {
                 "status": "FC",
-                "date": "2024-10-15T22:38:22.623478"
+                "date": "2024-10-15T22:38:22.623478",
+                "lv": "22"
             },
             "Master": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "25"
             },
             "Append": {
                 "status": null,
-                "date": null
+                "date": null,
+                "lv": "-"
             },
             "date": "2024-10-15T22:38:22.623478"
         }
