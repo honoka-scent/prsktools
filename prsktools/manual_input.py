@@ -8,9 +8,11 @@ def search_words(keyword, word_list):
     return [word for word in word_list if keyword in word]
 
 
-def manual_input(song_names=[], song_name=None, songs=None):
-    song_names = song_names or []
+def manual_input(songs, song_name=None, matched_songs=None):
     song_question = []
+    song_names = [song["楽曲名"] for song in songs]
+    if matched_songs:
+        matched_words = matched_songs
 
     if song_name is None:
         keyword_question = [
@@ -59,5 +61,4 @@ if __name__ == "__main__":
     from data_loader import load_songs_from_csv
 
     songs = load_songs_from_csv()
-    song_names = [song["楽曲名"] for song in songs]
-    manual_input(song_names, songs=songs)
+    manual_input(songs=songs)

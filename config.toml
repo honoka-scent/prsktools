@@ -1,2 +1,7 @@
 [tesseract]
-path = "C:\\Program Files\\Tesseract-OCR"
+path = "C://Program Files//Tesseract-OCR"
+
+[image]
+directory = "D://My Documents//Video"
+keyword = "Screenshot"
+crop = [352, 40, 600, 80]

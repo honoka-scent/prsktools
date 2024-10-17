@@ -3,7 +3,7 @@ from PIL import ImageGrab
 import win32gui
 
 
-def get_window_screenshot(window_title):
+def screenshot_from_window(window_title):
     # ウィンドウを取得
     window = gw.getWindowsWithTitle(window_title)
     if not window:
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     # 特定のウィンドウ名を指定してスクリーンショットを取得
     window_title = input("ウィンドウを選択してください。Enterキーを押してください。")
     # window_title = "ウィンドウ名をここに入力"
-    screenshot = get_window_screenshot(window_title)
+    screenshot = screenshot_from_window(window_title)
     if screenshot:
         screenshot.show()  # 画像を表示
         screenshot.save("window_screenshot.png")  # 画像を保存

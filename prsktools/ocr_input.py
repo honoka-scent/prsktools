@@ -9,6 +9,7 @@ from difflib import SequenceMatcher
 from manual_input import manual_input
 
 from screenshot import screenshot_from_window
+from file import get_latest_file
 
 
 def ocr_input_from_window(window_title, crop_box=None, show_image=False):
@@ -17,8 +18,8 @@ def ocr_input_from_window(window_title, crop_box=None, show_image=False):
 
 
 def ocr_input_from_file(image_path, crop_box=None, show_image=False):
-    image = Image.open(image_path, crop_box, show_image)
-    ocr_input(image)
+    image = Image.open(image_path)
+    ocr_input(image, crop_box=crop_box, show_image=show_image)
 
 
 # cropbox: (left, upper, right, lower)
@@ -29,7 +30,11 @@ def ocr_input(image, crop_box=None, show_image=False):
     if show_image:
         image.show()
 
-    text = pytesseract.image_to_string(image, lang="日本語")
+    print("テキスト認識中...")
+    text = pytesseract.image_to_string(
+        image, lang="jpn", config="--psm 7"
+    )  # psm 7: Treat the image as a single text line.
+    text = re.sub(r"\s+", "", text)
     print("認識されたテキスト:", text)
 
     # 楽曲データをロードして確認
@@ -39,7 +44,7 @@ def ocr_input(image, crop_box=None, show_image=False):
     similarity_threshold = 0.6
     matched_songs = []
     for song in songs_list:
-        similarity = SequenceMatcher(None, text, song["name"]).ratio()
+        similarity = SequenceMatcher(None, text, song["楽曲名"]).ratio()
         if similarity >= similarity_threshold:
             matched_songs.append((song, similarity))
 
@@ -48,13 +53,28 @@ def ocr_input(image, crop_box=None, show_image=False):
     if not matched_songs:
         print("該当する楽曲が見つかりませんでした。")
 
-    manual_input(
-        song_names=[song[0]["name"] for song in matched_songs], songs=songs_list
-    )
+    matched_songs_name = [song[0]["楽曲名"] for song in matched_songs]
+    print(matched_songs_name)
+
+    if (len(matched_songs_name) == 1) or (len(matched_songs_name) == 0):
+        song_name = matched_songs_name[0] if matched_songs_name else None
+        manual_input(songs=songs_list, song_name=song_name)
+    else:
+        manual_input(songs=songs_list, matched_songs=matched_songs_name)
 
 
-def main():
+if __name__ == "__main__":
+    import toml
+
+    with open("config.toml", "r") as file:
+        config = toml.load(file)
+    directory = config["image"]["directory"]
+    keyword = config["image"]["keyword"]
+    latest_file = get_latest_file(directory, keyword)
+    print(f"Latest file: {latest_file}")
+    crop_box = config["image"]["crop"]
+
     image_path = "./image/sample.png"
-    window_name = ""
-    ocr_input_from_file(image_path)
-    ocr_input_from_window(window_name, (0, 0, 200, 300))
+    ocr_input_from_file(latest_file, crop_box=crop_box, show_image=True)
+    # window_name = "ウィンドウプロジェクター（プレビュー）"
+    # ocr_input_from_window(window_name, None, True)
