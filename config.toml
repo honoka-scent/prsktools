@@ -5,3 +5,10 @@ path = "C://Program Files//Tesseract-OCR"
 directory = "D://My Documents//Video"
 keyword = "Screenshot"
 crop = [352, 40, 600, 80]
+
+[output]
+expert = true
+master = true
+append = false
+fc = true
+ap = false

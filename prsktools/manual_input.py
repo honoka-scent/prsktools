@@ -49,7 +49,9 @@ def manual_input(songs, song_name=None, matched_songs=None):
     ]
     song_answer = inquirer.prompt(song_question)
 
-    song_name = song_answer["name"]
+    if song_name is None:
+        song_name = song_answer["name"]
+    # song_name = song_answer["name"]
     difficulty = song_answer["difficulty"]
     status = song_answer["status"]
     song_count = len(song_names)

@@ -64,10 +64,9 @@ def ocr_input(image, crop_box=None, show_image=False):
 
 
 if __name__ == "__main__":
-    import toml
+    from prsktools.config import load_config
 
-    with open("config.toml", "r") as file:
-        config = toml.load(file)
+    config = load_config()
     directory = config["image"]["directory"]
     keyword = config["image"]["keyword"]
     latest_file = get_latest_file(directory, keyword)
@@ -75,6 +74,6 @@ if __name__ == "__main__":
     crop_box = config["image"]["crop"]
 
     image_path = "./image/sample.png"
-    ocr_input_from_file(latest_file, crop_box=crop_box, show_image=True)
+    ocr_input_from_file(latest_file, crop_box=crop_box, show_image=False)
     # window_name = "ウィンドウプロジェクター（プレビュー）"
     # ocr_input_from_window(window_name, None, True)

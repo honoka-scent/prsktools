@@ -1,0 +1,80 @@
+{
+    "song_count": {
+        "21": {
+            "Expert": 5
+        },
+        "22": {
+            "Expert": 21
+        },
+        "23": {
+            "Expert": 69
+        },
+        "24": {
+            "Expert": 120
+        },
+        "25": {
+            "Expert": 117,
+            "Master": 1,
+            "Append": 5
+        },
+        "26": {
+            "Expert": 75,
+            "Master": 30,
+            "Append": 4
+        },
+        "27": {
+            "Expert": 39,
+            "Master": 54,
+            "Append": 6
+        },
+        "28": {
+            "Expert": 12,
+            "Master": 98,
+            "Append": 5
+        },
+        "29": {
+            "Expert": 4,
+            "Master": 111,
+            "Append": 8
+        },
+        "30": {
+            "Expert": 6,
+            "Master": 73,
+            "Append": 8
+        },
+        "31": {
+            "Expert": 9,
+            "Master": 67,
+            "Append": 9
+        },
+        "32": {
+            "Master": 22,
+            "Append": 4
+        },
+        "33": {
+            "Master": 7,
+            "Append": 4
+        },
+        "34": {
+            "Master": 4,
+            "Append": 2
+        },
+        "35": {
+            "Master": 6,
+            "Append": 3
+        },
+        "36": {
+            "Master": 1,
+            "Append": 3
+        },
+        "37": {
+            "Master": 3,
+            "Append": 3
+        }
+    },
+    "diff_count": {
+        "Expert": 477,
+        "Master": 477,
+        "Append": 64
+    }
+}

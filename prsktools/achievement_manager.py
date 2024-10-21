@@ -2,7 +2,24 @@
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
+
+from config import (
+    load_config,
+    is_output_expert,
+    is_output_master,
+    is_output_append,
+    is_output_fc,
+    is_output_ap,
+)
+
+
+from song_util import (
+    get_diff_dict,
+    get_song_level,
+    get_song_count_per_level,
+    load_song_info,
+)
 
 
 ACHIEVEMENTS_JSON = "achievements.json"
@@ -20,17 +37,6 @@ def save_achievements(achievements):
         json.dump(achievements, file, ensure_ascii=False, indent=4)
 
 
-def get_song_level(song_name, difficulty, songs):
-    song_info = [song for song in songs if song["楽曲名"] == song_name][0]
-    diff_lv_dict = {
-        "Expert": "X",
-        "Master": "M",
-        "Append": "A",
-    }
-    lv = song_info[diff_lv_dict[difficulty]]
-    return lv
-
-
 def set_achievement_song_level(songs):
     achievements = load_achievements()
     for key, value in achievements["results"].items():
@@ -39,6 +45,41 @@ def set_achievement_song_level(songs):
             achievements["results"][key][difficulty]["lv"] = lv
     save_achievements(achievements)
     print("楽曲の難易度を更新しました。")
+
+
+def set_achievement_level_count(songs):
+    achievements = load_achievements()
+    song_info = load_song_info()
+    achievements["result"]
+
+
+def get_today_achievements(achievements: dict):
+    today = (datetime.now() - timedelta(hours=4)).date().today()
+    today_dt = datetime.combine(today, datetime.min.time())
+    diff_keys = get_diff_dict().keys()
+    histories = {"total": {"FC": 0, "AP": 0}}
+    history_dict = {
+        "FC": 0,
+        "AP": 0,
+    }
+    for key, value in achievements["results"].items():
+        for diff_key in diff_keys:
+            date_str = value[diff_key]["date"]
+            if date_str is None or date_str == "":
+                continue
+            if datetime.fromisoformat(date_str) < today_dt:
+                continue
+            level = value[diff_key]["level"]
+            if histories.get(level) is None:
+                histories[level] = history_dict.copy()
+            if value[diff_key]["status"] == "FC":
+                histories[level]["FC"] += 1
+                histories["total"]["FC"] += 1
+            elif value[diff_key]["status"] == "AP":
+                histories[level]["AP"] += 1
+                histories["total"]["AP"] += 1
+
+    return histories
 
 
 def update_achievement(song_name, difficulty, status, song_count, songs):
@@ -68,13 +109,15 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
     # 難易度に応じてステータスを更新
     date_now = datetime.now().isoformat()
     achievements["results"][key][difficulty]["status"] = status
-    achievements["results"][key][difficulty]["level"] = status
+    achievements["results"][key][difficulty]["level"] = lv
     achievements["results"][key][difficulty]["date"] = date_now
     achievements["results"][key]["date"] = date_now  # 更新日時を変更
 
     # 集計データの更新
     achievements["total"] = calculate_total_clears(achievements["results"], songs)
     achievements["date"] = date_now
+
+    achievements["today"] = get_today_achievements(achievements)
 
     save_achievements(achievements)
     update_achievement_log(song_name, difficulty, lv, status, song_count)
@@ -89,16 +132,22 @@ def calculate_total_clears(results, songs):
         "Master": t_dict.copy(),
         "Append": t_dict.copy(),
     }
+    # lv_dict =
+
     keys = ["Expert", "Master", "Append"]
 
     for key, value in results.items():
         for difficulty in keys:
             lv = get_song_level(value["name"], difficulty, songs)
+            # if (lv == "-") or (lv is None):
+            #     continue
             diff_dict = value.get(difficulty, None)
             if diff_dict is None:
                 continue
+            # if lv not in diff_dict:
             if diff_dict["status"] is not None:  # クリアされている場合のみカウント
                 if diff_dict["status"] == "Clear":
+                    total_clears[difficulty]["Clear"] += 1
                     total_clears[difficulty]["Clear"] += 1
                 elif diff_dict["status"] == "FC":
                     total_clears[difficulty]["Clear"] += 1
@@ -114,7 +163,7 @@ def update_achievement_log(song_name, difficulty, lv, status, song_count):
     # time = datetime.now().strftime("%Y-%m-%d %H:%M")
     time = datetime.now().date().isoformat()
     # log_entry = f"{time}: {status} - {song_name}[{difficulty}]\n"
-    log_entry = f"{status} - {song_name}[{difficulty.upper()[:3]}{lv}]\n"
+    log_entry = f"{status} - {song_name[:10]}[{difficulty.upper()[:3]}{lv}]\n"
 
     # 今日の達成をログに追記
     with open("achievement_log.txt", "a", encoding="utf-8") as file:
@@ -123,10 +172,57 @@ def update_achievement_log(song_name, difficulty, lv, status, song_count):
     # 合計達成数を計算して更新
     achievements = load_achievements()
     log_text = ""
+
+    # 今日のリザルトの確認
+    log_text += "[Today]\n"
+    for key, value in achievements["today"].items():
+        if key == "total":
+            continue
+        lv = key
+        log_row = f"Lv.{lv} "
+        fc_text = ""
+        ap_text = ""
+        for k, v in value.items():
+            if v == 0:
+                continue
+            if k == "FC":
+                fc_text = f"FC: {v}"
+                continue
+            if k == "AP":
+                ap_text = f"AP: {v}"
+                continue
+        if fc_text != "":
+            log_row += fc_text
+        if ap_text != "":
+            if fc_text != "":
+                log_row += ", "
+            log_row += ap_text
+        if fc_text != "" or ap_text != "":
+            log_text += log_row + "\n"
+
+    log_text += "\n"
+
+    config = load_config()
+
+    # 合計のリザルトの確認
     for key, value in achievements["total"].items():
+        if key.upper() == "EXPERT" and not is_output_expert(config):
+            print("skipped expert")
+            continue
+        if key.upper() == "MASTER" and not is_output_master(config):
+            print("skipped master")
+            continue
+        if key.upper() == "APPEND" and not is_output_append(config):
+            print("skipped append")
+            continue
+
         temp_text = f"[{key[:3].upper()}]"
         for k, v in value.items():
             if k == "Clear":
+                continue
+            if k == "FC" and not is_output_fc(config):
+                continue
+            if k == "AP" and not is_output_ap(config):
                 continue
             if v == 0:
                 continue
