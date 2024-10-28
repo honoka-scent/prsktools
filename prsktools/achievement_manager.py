@@ -3,6 +3,7 @@
 import json
 import os
 from datetime import datetime, timedelta
+from wcwidth import wcwidth
 
 from config import (
     load_config,
@@ -25,6 +26,20 @@ from song_util import (
 ACHIEVEMENTS_JSON = "achievements.json"
 
 
+def truncate_string_wcwidth(s, max_width=20):
+    current_width = 0
+    result = []
+    for char in s:
+        char_width = wcwidth(char)
+        if char_width < 0:
+            char_width = 1  # 制御文字などは1幅とみなす
+        if current_width + char_width > max_width:
+            break
+        result.append(char)
+        current_width += char_width
+    return "".join(result)
+
+
 def load_achievements():
     if os.path.exists(ACHIEVEMENTS_JSON):
         with open(ACHIEVEMENTS_JSON, "r", encoding="utf-8") as file:
@@ -42,7 +57,7 @@ def set_achievement_song_level(songs):
     for key, value in achievements["results"].items():
         for difficulty in ["Expert", "Master", "Append"]:
             lv = get_song_level(value["name"], difficulty, songs)
-            achievements["results"][key][difficulty]["lv"] = lv
+            achievements["results"][key][difficulty]["level"] = lv
     save_achievements(achievements)
     print("楽曲の難易度を更新しました。")
 
@@ -162,8 +177,9 @@ def calculate_total_clears(results, songs):
 def update_achievement_log(song_name, difficulty, lv, status, song_count):
     # time = datetime.now().strftime("%Y-%m-%d %H:%M")
     time = datetime.now().date().isoformat()
+    log_song_name = truncate_string_wcwidth(song_name, 20)
     # log_entry = f"{time}: {status} - {song_name}[{difficulty}]\n"
-    log_entry = f"{status} - {song_name[:10]}[{difficulty.upper()[:3]}{lv}]\n"
+    log_entry = f"{status} - {log_song_name}[{difficulty.upper()[:3]}{lv}]\n"
 
     # 今日の達成をログに追記
     with open("achievement_log.txt", "a", encoding="utf-8") as file:

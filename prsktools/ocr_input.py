@@ -64,7 +64,7 @@ def ocr_input(image, crop_box=None, show_image=False):
 
 
 if __name__ == "__main__":
-    from prsktools.config import load_config
+    from config import load_config
 
     config = load_config()
     directory = config["image"]["directory"]
