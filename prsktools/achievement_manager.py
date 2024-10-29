@@ -108,18 +108,18 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
 
     # 新しいキーの場合、初期値を設定
     if key not in achievements["results"]:
-        achieve_dict = {
-            "status": None,
-            "level": lv,
-            "date": None,
-        }
-        achievements["results"][key] = {
-            "name": song_name,
-            "Expert": achieve_dict.copy(),
-            "Master": achieve_dict.copy(),
-            "Append": achieve_dict.copy(),
-            "date": datetime.now().isoformat(),
-        }
+        keys = ["Expert", "Master", "Append"]
+        for d in keys:
+            lv = get_song_level(song_name, d, songs)
+            achieve_dict = {
+                "status": None,
+                "level": lv,
+                "date": None,
+            }
+            achievements["results"][key] = {
+                "name": song_name,
+            }
+            achievements["results"][key][d] = achieve_dict
 
     # 難易度に応じてステータスを更新
     date_now = datetime.now().isoformat()

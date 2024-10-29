@@ -25,7 +25,7 @@ const HomePage: React.FC = async () => {
     // マッピング関数を使用してProcessedEntryの配列を取得
     const entries: ProcessedEntry[] = mapDataToProcessedEntries(data);
     const songInfos: Song[] = mapSongInfo(songData);
-    console.log(songInfos);
+    // console.log(songInfos);
 
     return <div>
       <DataTable entries={entries} />

@@ -4,7 +4,10 @@
 
 import React, { useState, useMemo } from 'react';
 import { DataGrid, GridColDef, GridLogicOperator } from '@mui/x-data-grid';
-import { Container, Typography, TextField, Box, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import {
+    Container, Typography, TextField, Box, FormControl, InputLabel, Select, MenuItem, FormControlLabel,
+    Checkbox,
+} from '@mui/material';
 import { ProcessedEntry } from '../types/data';
 
 interface DataTableProps {
@@ -30,7 +33,7 @@ const initialFilterModel = {
         // { columnField: 'level', operatorValue: 'contains', value: '' },
         // { field: 'status', operator: 'contains', 'value': 'FC' },
         // { field: 'status', operator: 'contains', 'value': 'AP' },
-        { field: 'status', operator: 'isNotEmpty' },
+        // { field: 'status', operator: 'isNotEmpty' },
         // { columnField: 'date', operatorValue: 'isNotEmpty' },
     ],
     logicOperator: GridLogicOperator.And,
@@ -47,6 +50,7 @@ const DataTable: React.FC<DataTableProps> = ({ entries }) => {
     const [filterDifficulty, setFilterDifficulty] = useState<string>('All');
     const [filterLevel, setFilterLevel] = useState<string>('All');
     const [filterStatus, setFilterStatus] = useState<string>('All');
+    const [isNoneVisible, setNoneVisible] = useState<boolean>(false);
 
     // フィルターのトグル関数
     // const toggleFilter = () => {
@@ -71,10 +75,14 @@ const DataTable: React.FC<DataTableProps> = ({ entries }) => {
             // ステータスフィルター
             const matchesStatus = filterStatus === 'All' || entry.status === filterStatus;
 
+            // 未達成を非表示にする場合
+            const hideNone = !isNoneVisible && entry.status === null
+            if (hideNone) return false;
+
             // すべての条件を満たす場合に含める
             return matchesSearchText && matchesDifficulty && matchesLevel && matchesStatus;
         });
-    }, [entries, searchText, filterDifficulty, filterLevel, filterStatus]);
+    }, [entries, searchText, filterDifficulty, filterLevel, filterStatus, isNoneVisible]);
 
     // ユニークな難易度、レベル、ステータスのリストを作成
     const uniqueDifficulties = useMemo(() => {
@@ -156,6 +164,22 @@ const DataTable: React.FC<DataTableProps> = ({ entries }) => {
                                 </MenuItem>
                             ))}
                         </Select>
+                    </FormControl>
+
+                    {/* チェックボックス */}
+                    <FormControl variant="outlined" style={{ minWidth: 150 }}>
+                        {/* <InputLabel id="status-label">ステータス</InputLabel> */}
+                        {/* <FormGroup> */}
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={isNoneVisible}
+                                    onChange={(e) => setNoneVisible(e.target.checked)}
+                                />
+                            }
+                            label="未達成も表示する"
+                        />
+                        {/* </FormGroup> */}
                     </FormControl>
                 </Box>
                 {/* 曲名検索ボックス */}
