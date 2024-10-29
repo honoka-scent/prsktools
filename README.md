@@ -1,6 +1,10 @@
-# ビターチョコレート
+# about
 
-甘い
+プロセカの達成度を記録して確認するためのツールたち
+
+## pages
+
+https://honoka-scent.github.io/prsktools/
 
 ## motivate
 
@@ -35,3 +39,5 @@
 ・gh-pagesのブランチがGithub Pagesになる
 
 ・github Pagesを使いたい場合はリポジトリを公開にする必要がある。恥ずかしい
+
+・nextjs.ymlは親ディレクトリ上で動かすことを想定しているためfrontendディレクトリで動くように修正。defaultsのworking-directoryとsetup nodeのcache-dependency-pathを設定。
