@@ -196,26 +196,14 @@ const DataTable: React.FC<DataTableProps> = ({ entries }) => {
                 <DataGrid
                     rows={filteredEntries}
                     columns={columns}
-                    // pageSize={10}
-                    pageSizeOptions={[10, 20, 50]}
                     initialState={{
                         filter: { filterModel: initialFilterModel },
                         sorting: {
                             sortModel: [{ field: 'date', sort: 'desc' }],
                         },
                     }}
-                    // components={{
-                    //     // Toolbar: CustomToolbar,
-                    // }}
-                    // componentsProps={{
-                    //     toolbar: {
-                    //         showFilter: showFilter,
-                    //         toggleFilter: toggleFilter,
-                    //     },
-                    // }}
                     disableRowSelectionOnClick
                     filterMode="client"
-                // disableColumnFilter={!showFilter}
                 />
             </div>
         </Container>

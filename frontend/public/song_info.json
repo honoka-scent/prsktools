@@ -7,13 +7,13 @@
             "Expert": 21
         },
         "23": {
-            "Expert": 69
+            "Expert": 70
         },
         "24": {
             "Expert": 120
         },
         "25": {
-            "Expert": 117,
+            "Expert": 120,
             "Master": 1,
             "Append": 5
         },
@@ -24,7 +24,7 @@
         },
         "27": {
             "Expert": 39,
-            "Master": 54,
+            "Master": 55,
             "Append": 6
         },
         "28": {
@@ -34,16 +34,16 @@
         },
         "29": {
             "Expert": 4,
-            "Master": 111,
-            "Append": 8
+            "Master": 113,
+            "Append": 9
         },
         "30": {
             "Expert": 6,
-            "Master": 73,
+            "Master": 74,
             "Append": 8
         },
         "31": {
-            "Expert": 9,
+            "Expert": 10,
             "Master": 67,
             "Append": 9
         },
@@ -56,7 +56,7 @@
             "Append": 4
         },
         "34": {
-            "Master": 4,
+            "Master": 5,
             "Append": 2
         },
         "35": {
@@ -69,12 +69,12 @@
         },
         "37": {
             "Master": 3,
-            "Append": 3
+            "Append": 4
         }
     },
     "diff_count": {
-        "Expert": 477,
-        "Master": 477,
-        "Append": 64
+        "Expert": 482,
+        "Master": 482,
+        "Append": 66
     }
 }
