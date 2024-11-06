@@ -22,7 +22,10 @@ const LevelPieChart: React.FC<ChartProps> = ({ entries, songs }) => {
     }, [entries]);
 
     return (
-        <Container>
+        <Container style={{ marginTop: '2rem' }}>
+            <Typography variant="h4" gutterBottom>
+                レベル別アチーブメント率
+            </Typography>
             <Box mb={2} display="flex" flexDirection="column" gap={2} p={2}>
                 {/* フィルターのドロップダウン */}
                 <Box display="flex" gap={2}>

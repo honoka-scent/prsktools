@@ -1272,12 +1272,183 @@
                 "date": null
             },
             "date": "2024-10-25T22:32:09.693788"
+        },
+        "フューエル": {
+            "name": "フューエル",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2024-10-31T00:39:28.670419"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-10-31T00:39:28.670419"
+        },
+        "マインドブランド": {
+            "name": "マインドブランド",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-10-31T00:51:08.815693"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-10-31T00:51:08.815693"
+        },
+        "ハロ／ハワユ": {
+            "name": "ハロ／ハワユ",
+            "Expert": {
+                "status": "FC",
+                "level": "22",
+                "date": "2024-10-31T16:18:16.877557"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-10-31T16:18:16.877557"
+        },
+        "再生": {
+            "name": "再生",
+            "Expert": {
+                "status": "FC",
+                "level": "22",
+                "date": "2024-11-03T00:06:05.023098"
+            },
+            "Master": {
+                "status": null,
+                "level": "26",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-03T00:06:05.023098"
+        },
+        "シャルル": {
+            "name": "シャルル",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-04T00:56:48.988303"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "date": "2024-11-04T00:56:48.988303"
+        },
+        "Just Be Friends": {
+            "name": "Just Be Friends",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-04T01:03:17.557102"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-04T01:03:17.557102"
+        },
+        "Q": {
+            "name": "Q",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-11-04T16:22:45.117253"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-04T16:22:45.117253"
+        },
+        "酔いどれ知らず": {
+            "name": "酔いどれ知らず",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-11-04T23:26:32.061383"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "date": "2024-11-04T23:26:32.061383"
+        },
+        "ノマド": {
+            "name": "ノマド",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-06T23:40:37.539413"
+            },
+            "Master": {
+                "status": null,
+                "level": "26",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-06T23:40:37.539413"
         }
     },
     "total": {
         "Expert": {
-            "Clear": 66,
-            "FC": 66,
+            "Clear": 75,
+            "FC": 75,
             "AP": 0
         },
         "Master": {
@@ -1291,14 +1462,14 @@
             "AP": 0
         }
     },
-    "date": "2024-10-25T22:32:09.693788",
+    "date": "2024-11-06T23:40:37.539413",
     "today": {
         "total": {
-            "FC": 2,
+            "FC": 1,
             "AP": 0
         },
         "23": {
-            "FC": 2,
+            "FC": 1,
             "AP": 0
         }
     }

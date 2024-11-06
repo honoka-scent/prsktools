@@ -109,15 +109,15 @@ def update_achievement(song_name, difficulty, status, song_count, songs):
     # 新しいキーの場合、初期値を設定
     if key not in achievements["results"]:
         keys = ["Expert", "Master", "Append"]
+        achievements["results"][key] = {
+            "name": song_name,
+        }
         for d in keys:
-            lv = get_song_level(song_name, d, songs)
+            d_l = get_song_level(song_name, d, songs)
             achieve_dict = {
                 "status": None,
-                "level": lv,
+                "level": d_l,
                 "date": None,
-            }
-            achievements["results"][key] = {
-                "name": song_name,
             }
             achievements["results"][key][d] = achieve_dict
 
