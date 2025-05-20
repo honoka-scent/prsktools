@@ -153,7 +153,7 @@ def calculate_total_clears(results, songs):
 
     for key, value in results.items():
         for difficulty in keys:
-            lv = get_song_level(value["name"], difficulty, songs)
+            # lv = get_song_level(value["name"], difficulty, songs)
             # if (lv == "-") or (lv is None):
             #     continue
             diff_dict = value.get(difficulty, None)

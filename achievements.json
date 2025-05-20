@@ -1443,17 +1443,910 @@
                 "date": null
             },
             "date": "2024-11-06T23:40:37.539413"
+        },
+        "とても痛い痛がりたい": {
+            "name": "とても痛い痛がりたい",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-08T00:05:37.181548"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-08T00:05:37.181548"
+        },
+        "私は雨": {
+            "name": "私は雨",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-11-08T00:11:33.873988"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-08T00:11:33.873988"
+        },
+        "ダブルラリアット": {
+            "name": "ダブルラリアット",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-10T16:08:37.074409"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-10T16:08:37.074409"
+        },
+        "金木犀": {
+            "name": "金木犀",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2024-11-10T17:30:36.877978"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-10T17:30:36.877978"
+        },
+        "キャットラビング": {
+            "name": "キャットラビング",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2024-11-13T16:29:50.943199"
+            },
+            "Master": {
+                "status": null,
+                "level": "30",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-13T16:29:50.943199"
+        },
+        "ナンセンス文学": {
+            "name": "ナンセンス文学",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2024-11-13T16:30:02.601968"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-13T16:30:02.601968"
+        },
+        "心予報": {
+            "name": "心予報",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-11-17T23:09:18.662670"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "date": "2024-11-17T23:09:18.662670"
+        },
+        "セカイ": {
+            "name": "セカイ",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-19T23:12:41.886141"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-19T23:12:41.886141"
+        },
+        "ウミユリ海底譚": {
+            "name": "ウミユリ海底譚",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-19T23:17:30.254402"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-19T23:17:30.254402"
+        },
+        "39みゅーじっく！": {
+            "name": "39みゅーじっく！",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-19T23:21:03.561411"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-19T23:21:03.561411"
+        },
+        "からくりピエロ": {
+            "name": "からくりピエロ",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-19T23:32:55.295434"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-19T23:32:55.295434"
+        },
+        "ECHO": {
+            "name": "ECHO",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-11-19T23:35:18.617402"
+            },
+            "Master": {
+                "status": null,
+                "level": "26",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-11-19T23:35:18.617402"
+        },
+        "乙女解剖": {
+            "name": "乙女解剖",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-01T10:42:54.387801"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-01T10:42:54.387801"
+        },
+        "トリコロージュ": {
+            "name": "トリコロージュ",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-03T21:25:32.299587"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-03T21:25:32.299587"
+        },
+        "演劇": {
+            "name": "演劇",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-05T13:48:43.028327"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-05T13:48:43.028327"
+        },
+        "Bad Apple!! feat.SEKAI": {
+            "name": "Bad Apple!! feat.SEKAI",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-05T13:49:00.219047"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "31",
+                "date": null
+            },
+            "date": "2024-12-05T13:49:00.219047"
+        },
+        "余花にみとれて": {
+            "name": "余花にみとれて",
+            "Expert": {
+                "status": "AP",
+                "level": "21",
+                "date": "2024-12-10T20:32:51.614591"
+            },
+            "Master": {
+                "status": "FC",
+                "level": "25",
+                "date": "2024-12-10T20:12:37.928367"
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-10T20:32:51.614591"
+        },
+        "ラブカ？": {
+            "name": "ラブカ？",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2024-12-30T18:27:04.988115"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-30T18:27:04.988115"
+        },
+        "はぐ": {
+            "name": "はぐ",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-30T18:46:45.299447"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-30T18:46:45.299447"
+        },
+        "おちゃめ機能": {
+            "name": "おちゃめ機能",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-30T19:32:46.398449"
+            },
+            "Master": {
+                "status": null,
+                "level": "30",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-30T19:32:46.398449"
+        },
+        "ラグトレイン": {
+            "name": "ラグトレイン",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2024-12-30T19:36:50.395060"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "25",
+                "date": null
+            },
+            "date": "2024-12-30T19:36:50.395060"
+        },
+        "混沌ブギ": {
+            "name": "混沌ブギ",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2024-12-31T12:43:27.741459"
+            },
+            "Master": {
+                "status": null,
+                "level": "30",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "33",
+                "date": null
+            },
+            "date": "2024-12-31T12:43:27.741459"
+        },
+        "強風オールバック": {
+            "name": "強風オールバック",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2024-12-31T13:00:17.361233"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2024-12-31T13:00:17.361233"
+        },
+        "サイハテ": {
+            "name": "サイハテ",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2025-01-09T00:05:26.905671"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-01-09T00:05:26.905671"
+        },
+        "NEO": {
+            "name": "NEO",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-01-30T21:20:32.124327"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "32",
+                "date": null
+            },
+            "date": "2025-01-30T21:20:32.124327"
+        },
+        "あいのうた": {
+            "name": "あいのうた",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-02T12:31:50.108422"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-02T12:31:50.108422"
+        },
+        "のだ": {
+            "name": "のだ",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-02T12:35:18.996542"
+            },
+            "Master": {
+                "status": null,
+                "level": "30",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "33",
+                "date": null
+            },
+            "date": "2025-02-02T12:35:18.996542"
+        },
+        "アイムマイン": {
+            "name": "アイムマイン",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-02T13:04:40.665335"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-02T13:04:40.665335"
+        },
+        "すきなことだけでいいです": {
+            "name": "すきなことだけでいいです",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2025-02-02T13:20:51.611416"
+            },
+            "Master": {
+                "status": null,
+                "level": "31",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-02T13:20:51.611416"
+        },
+        "FUN!!": {
+            "name": "FUN!!",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-03T23:39:06.960413"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-03T23:39:06.960413"
+        },
+        "スマイル*シンフォニー": {
+            "name": "スマイル*シンフォニー",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2025-02-05T23:36:59.742621"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-05T23:36:59.742621"
+        },
+        "ULTRA C": {
+            "name": "ULTRA C",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-05T23:43:48.381981"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-05T23:43:48.381981"
+        },
+        "そこに在る、光。": {
+            "name": "そこに在る、光。",
+            "Expert": {
+                "status": "FC",
+                "level": "22",
+                "date": "2025-02-09T17:23:13.428818"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-09T17:23:13.428818"
+        },
+        "Color of Drops": {
+            "name": "Color of Drops",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2025-02-09T17:23:26.234816"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "26",
+                "date": null
+            },
+            "date": "2025-02-09T17:23:26.234816"
+        },
+        "インテグラル": {
+            "name": "インテグラル",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2025-02-09T17:49:22.035810"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-09T17:49:22.035810"
+        },
+        "烈火": {
+            "name": "烈火",
+            "Expert": {
+                "status": "FC",
+                "level": "23",
+                "date": "2025-02-10T22:24:31.812534"
+            },
+            "Master": {
+                "status": null,
+                "level": "27",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-10T22:24:31.812534"
+        },
+        "ファイアダンス": {
+            "name": "ファイアダンス",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-10T22:33:45.137759"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-10T22:33:45.137759"
+        },
+        "I know 愛脳.": {
+            "name": "I know 愛脳.",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2025-02-10T22:48:30.639767"
+            },
+            "Master": {
+                "status": null,
+                "level": "31",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-10T22:48:30.639767"
+        },
+        "プロトディスコ": {
+            "name": "プロトディスコ",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2025-02-10T22:53:52.346182"
+            },
+            "Master": {
+                "status": null,
+                "level": "32",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "34",
+                "date": null
+            },
+            "date": "2025-02-10T22:53:52.346182"
+        },
+        "SToRY": {
+            "name": "SToRY",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-11T22:05:51.865520"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-11T22:05:51.865520"
+        },
+        "アイデンティティ": {
+            "name": "アイデンティティ",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2025-02-12T22:26:55.946261"
+            },
+            "Master": {
+                "status": null,
+                "level": "31",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-12T22:26:55.946261"
+        },
+        "ジェヘナ": {
+            "name": "ジェヘナ",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-12T22:43:31.643345"
+            },
+            "Master": {
+                "status": null,
+                "level": "31",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "31",
+                "date": null
+            },
+            "date": "2025-02-12T22:43:31.643345"
+        },
+        "ベノム": {
+            "name": "ベノム",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2025-02-16T13:39:22.368840"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-16T13:39:22.368840"
+        },
+        "Journey": {
+            "name": "Journey",
+            "Expert": {
+                "status": "FC",
+                "level": "25",
+                "date": "2025-02-19T22:11:58.821409"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-19T22:11:58.821409"
+        },
+        "さよならプリンセス": {
+            "name": "さよならプリンセス",
+            "Expert": {
+                "status": "FC",
+                "level": "26",
+                "date": "2025-02-19T22:16:14.543268"
+            },
+            "Master": {
+                "status": null,
+                "level": "30",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-02-19T22:16:14.543268"
+        },
+        "アンチユー": {
+            "name": "アンチユー",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2025-04-01T22:26:51.049353"
+            },
+            "Master": {
+                "status": null,
+                "level": "28",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-04-01T22:26:51.049353"
+        },
+        "虚無さん": {
+            "name": "虚無さん",
+            "Expert": {
+                "status": "FC",
+                "level": "24",
+                "date": "2025-05-16T21:50:35.481053"
+            },
+            "Master": {
+                "status": null,
+                "level": "29",
+                "date": null
+            },
+            "Append": {
+                "status": null,
+                "level": "-",
+                "date": null
+            },
+            "date": "2025-05-16T21:50:35.481053"
         }
     },
     "total": {
         "Expert": {
-            "Clear": 75,
-            "FC": 75,
-            "AP": 0
+            "Clear": 122,
+            "FC": 122,
+            "AP": 1
         },
         "Master": {
-            "Clear": 0,
-            "FC": 0,
+            "Clear": 1,
+            "FC": 1,
             "AP": 0
         },
         "Append": {
@@ -1462,13 +2355,13 @@
             "AP": 0
         }
     },
-    "date": "2024-11-06T23:40:37.539413",
+    "date": "2025-05-16T21:50:35.481053",
     "today": {
         "total": {
             "FC": 1,
             "AP": 0
         },
-        "23": {
+        "24": {
             "FC": 1,
             "AP": 0
         }
